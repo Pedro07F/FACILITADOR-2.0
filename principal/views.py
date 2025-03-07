@@ -1,8 +1,5 @@
-from django.shortcuts import render
 from principal.models import cadastro
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def principal_view(request):
-    '''empresas = cadastro.objects.all()
-    return render(request,'cadastro.html',{'cadastro':cadastro})'''
-    return HttpResponse('Meus Carros')
+    return render(request, 'cadastro.html') # O Render renderiza uma resposta Http e devolve o template
