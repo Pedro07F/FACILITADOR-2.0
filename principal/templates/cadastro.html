@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Empresas ACMS</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-    <h1>Sistema de Cadastro</h1>
+    <div>
+        <h1>CADASTRO DE EMPRESAS</h1>
+
+        <form method="post">
+            <label>
+                Nome
+                <input type="text" name="Nome">
+            </label>
+            <br>
+            <label>
+                CNPJ
+                <input type="number" name="CNPJ">
+            </label>
+            <br>
+        </form>
+
+        <button type="button" onclick="Cadastrar">Cadastrar</button>
+    </div>
 </body>
 </html>
